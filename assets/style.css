@@ -1,0 +1,30 @@
+body {
+    box-sizing: border-box;
+    background-image: url("my-images/space.jpg");
+}
+
+.btn {
+    font-family: 'Orbitron', sans-serif;
+}
+
+
+
+
+.jumbotron {
+   
+    text-align: center;
+    background-image: url("my-images/space.jpg");
+    color: yellow;
+}
+
+.fab {
+    display: inline;
+    color: orangered;
+    size:  200%;
+    padding: 20px;
+
+}
+
+.lead {
+    font-size: 25px;
+}
