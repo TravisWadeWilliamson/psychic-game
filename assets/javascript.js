@@ -50,17 +50,18 @@ function hideButton() {
     }
 };
 
-// create a function that is run when the user clicks on the start button.
+// create a function that is run when the user clicks on the start button and logs your button choice on the screen. Doesn't show choices permanently....
 document.onkeyup = function (event) {
     // determines which key the user pressed.
     var userGuess = event.key;
     console.log(userGuess);
 
 
-    // if userGuess matches computer
+    // if userGuess matches computer announces success, adds one win counter, but when there is a win the word "win" disappears and only logs one win....
     if (userGuess === computerChooses) {
         userGuessText.textContent = 'Padawon ' + userName + ', you guessed "' + userGuess + '". You are correct, but be careful of your confidence. It will lead you to the dark side, if you do not control it. Would you like to try again?';
         winCounter++;
+        winsText.textContent = winCounter;
         resetCounters();
     }
     // if userGuess does not match the computer
@@ -72,7 +73,7 @@ document.onkeyup = function (event) {
         userGuessText.textContent = 'Padawon ' + userName + ', only ' + (userGuessCounter-1) + ' chances remain. Let go of your feelings... Reach out... Feeeeeeel the answer!';
 
         
-        // This decreases the counter, which when zeros outs, should signify a match has been lost, add one to losses and reset the userGuessCounter to 8. lossCounter isn't working....
+        // This decreases the counter, which when zeros outs, should signify a match has been lost, add one to losses and reset the userGuessCounter to 8. lossCounter isn't working.... And When there is a loss, the word "loss" is replaced by the number....
         userGuessCounter--;
         console.log(userGuessCounter)
         if (userGuessCounter === 0) {
@@ -81,12 +82,4 @@ document.onkeyup = function (event) {
         }
     };
 }
-
-    // this alerts how many tries you've had and how many are left
-    // // need help with this ternary operator...
-    // alert('you guessed ' + userGuessCounter++ ,(userGuessCounter = 1) ? 'time.' : 'times. You have ' + userGuessCounter--, (userGuessCounter = 1) ?  'try' : 'tries' + ' remaining');
-    // if (userGuessCounter = 0) {
-    // confirm('Do or do not. There is no try')
-
-    // create function to hide button
 
