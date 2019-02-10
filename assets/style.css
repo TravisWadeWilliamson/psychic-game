@@ -7,14 +7,13 @@ body {
     font-family: 'Orbitron', sans-serif;
 }
 
-
-
-
 .jumbotron {
    
     text-align: center;
     background-image: url("my-images/space.jpg");
     color: yellow;
+    margin-bottom: 10;
+    padding-bottom: 10;
 }
 
 .fab {
@@ -27,4 +26,11 @@ body {
 
 .lead {
     font-size: 25px;
+}
+
+.left, .middle, .right {
+    color: yellow;
+    border-color: yellow;
+    border-radius: 25%;
+    border: 3px;
 }
