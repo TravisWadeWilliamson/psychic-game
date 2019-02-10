@@ -14,29 +14,25 @@
 
 <body>
 
-
   <div class="jumbotron">
-
     <h1 class="display-4"><i class="fab fa-jedi-order"></i>Test Your Force Sensitivity!<i class="fab fa-jedi-order"></i>
     </h1>
     <h2 class="lead">Open your mind. Let the force flow through you.
       <br>
       Let it guide you. Do not guess. <br>Rather feel the letter!</h2>
     <hr class="my-4">
-    <a class="btn btn-primary btn-lg" href="#" role="button">Start</a>
-
-    <!-- onclick="startGame()" -->
+    <button class="btn btn-primary btn-lg" href="#" role="button" onclick="startGame()">Start</button>
   </div>
 
   <div class="container">
 
     <div class="row">
 
-      <div class="left" class="col-md-3">
-        <img src="assets/my-images/luke.jpg">
+      <div class="col-md-4">
+        <img class="luke" src="assets/my-images/luke.jpg">
       </div>
 
-      <div class="middle" class="col-md-3">
+      <div class="col-md-4 middle">
         <p id="userguess-text"></p>
         <!--input from the game, store it so you can see what choices you've made-- var userGuesses = document.getElementBy('element id you want to target'); userGuess.textContent = 'choices';> -->
         <p id="computerchoice-text"></p>
@@ -44,8 +40,8 @@
         <p id="losses-text">Losses:</p>
       </div>
 
-      <div class="right" class="col-md-3">
-        <img src="assets/my-images/obi-wan-kenobi.jpg">
+      <div class="col-md-4">
+        <img class="obi" src="assets/my-images/obi-wan-kenobi.jpg">
       </div>
 
     </div>

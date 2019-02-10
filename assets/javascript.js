@@ -1,5 +1,6 @@
 // create an array of letters to use in the game
 
+
 var computerChoices = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'v', 'x', 'y', 'z'];
 
 // undefined variable. Once the **** runs then the variable is defined, ie. a letter from the array.
@@ -29,10 +30,10 @@ function resetCounters() {
 
 //Alert at the start of the game.
 // On button click start the game.
-// startGame () {
+function startGame () {
     alert('Padawon ' + userName + ', you have 8 tries to reach into my mind.');
     alert('Open your mind. Relax. Let the force flow through you. Now choose your letter!');
-// }
+}
 
 
 
